@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { colors } from '../../styles/globalStyles';
 
@@ -25,35 +25,54 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
+
+        width: "100%",
+
+        marginTop: 36,
+        marginBottom: 42,
     },
 
     input: {
+        flex: 1,
+
         backgroundColor: colors.primary.darkGray,
         color: colors.primary.light,
 
-        width: Dimensions.get("screen").width - 100,
         height: 56,
 
         padding: 16,
-        marginTop: 10,
 
         borderRadius: 5,
 
         fontSize: 16,
     },
 
-    button: {
+    addButton: {
         alignItems: "center",
         justifyContent: "center",
 
         width: 56,
         height: 56,
 
-        marginTop: 10,
+        marginLeft: 12,
 
         borderRadius: 5,
 
         backgroundColor: colors.primary.green,
+    },
+
+    deleteAllButton: {
+        alignItems: "center",
+        justifyContent: "center",
+
+        width: 56,
+        height: 56,
+
+        marginLeft: 12,
+
+        borderRadius: 5,
+
+        backgroundColor: colors.primary.red,
     },
 
     buttonText: {
